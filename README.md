@@ -328,7 +328,7 @@ Sistema voltou?
 
 ### 📌 Informações do Documento
 
-**Última atualização:** `Fevereiro de 2026` | **Versão:** `1.2` | **Responsável:** `[Jessica Ferreira]`
+**Última atualização:** `Fevereiro de 2026` | **Versão:** `1.2` | **Supervisora:** `[Jessica Ferreira]`
 
 ---
 
@@ -336,3 +336,4 @@ Sistema voltou?
 _Documento de uso interno_
 
 </div>
+
