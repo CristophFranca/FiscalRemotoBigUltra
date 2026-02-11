@@ -231,7 +231,7 @@ Cálculo:
 
 1. **Verifique o peso na balança** → Ex: `0,234 kg`
 2. **Calcule:** Peso × Preço/kg → Ex: `0,234 × R$ 8,99 = R$ 2,10`
-3. **Registre o valor calculado** no sistema
+3. **Faça a divergência** usando a **Função 29**
 
 **Exemplo:**
 ```
@@ -282,3 +282,4 @@ Passo a passo no sistema:
 _Documento de uso interno_
 
 </div>
+
