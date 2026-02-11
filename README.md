@@ -24,7 +24,7 @@
 
 ## 🔍 Navegação Rápida
 
-**[⌨️ Atalhos](#️-atalhos-do-teclado)** | **[🛒 Funções](#-funções-do-sistema)** | **[💳 POS](#-procedimento-pos)** | **[📝 Procedimentos](#-o-que-fazer)** | **[⚖️ Erro na Pesagem](#️-erro-na-pesagem)**
+**[⌨️ Atalhos](#️-atalhos-do-teclado)** | **[🛒 Funções](#-funções-do-sistema)** | **[💳 POS](#-procedimento-pos)** | **[📝 Procedimentos](#-o-que-fazer)** | **[🚨 Erros Comuns](#-erros-comuns)**
 
 </div>
 
@@ -173,7 +173,7 @@
 **Passo a passo:**
 
 1. **Função 13** → Acesse a função de estorno de TEF
-2. **Seleciona o tipo de TEF** → Escolha entre Cartão ou Pix
+2. **Selecione o tipo de TEF** → Escolha entre Cartão ou Pix
 3. **Insira o Valor da Transação** → Ex: `R$ 178,90`
 4. **Insira a Data** → Ex: `01/02/2026`
 5. **Insira o CV/NSU** → Ex: `000123456`
@@ -231,6 +231,16 @@ Cálculo:
 
 <br>
 
+---
+
+<div align="center">
+
+## 🚨 Erros Comuns
+
+</div>
+
+---
+
 ### ⚖️ Erro na Pesagem
 
 > ⚠️ **Descrição do problema:** O sistema contabilizava 1kg independente da quantidade real pesada pelo cliente (ex: 200g ou 4kg).
@@ -278,13 +288,47 @@ Passo a passo no sistema:
 
 ---
 
+### 🔌 Erro de Conexão — Vale Crédito
+
+> ⚠️ **Descrição do problema:** Ao Validar / Devolver / Cancelar o vale crédito, o sistema retorna **"Sem conexão com servidor remoto"**.
+
+**Passo a passo:**
+
+1. **Chame um Fiscal ou Encarregado**
+
+2. **Faça a liberação do valor do vale em dinheiro** ao cliente
+
+3. **Peça para o operador retornar em algumas horas**
+
+4. Quando o sistema voltar, utilize a **Função 44** para abater o valor do vale no caixa
+
+5. **Caso o sistema ainda esteja com erro:**
+   - Peça ao Fiscal/Encarregado para enviar uma **nota para a tesoureira** junto com o vale crédito no malote
+   - A tesoureira irá validar no seu expediente para **evitar quebra indesejada**
+
+> 💡 **Resumo do fluxo:**
+
+```
+Erro "Sem conexão"
+       ↓
+Chamar Fiscal/Encarregado
+       ↓
+Liberar valor em dinheiro ao cliente
+       ↓
+Sistema voltou?
+   ├── SIM → Função 44 → Abater vale no caixa
+   └── NÃO → Nota + Vale no malote → Tesoureira resolve no expediente
+```
+
+<br>
+
+---
+
 <div align="center">
 
 ### 📌 Informações do Documento
 
-**Última atualização:** `Fevereiro de 2026`  
-**Versão:** `1.1`  
-**Responsável:** `[Jessica Ferreira]`
+**Última atualização:** `Fevereiro de 2026` | **Versão:** `1.2` | **Responsável:** `[Jessica Ferreira]`
 
 ---
 
@@ -292,16 +336,3 @@ Passo a passo no sistema:
 _Documento de uso interno_
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
