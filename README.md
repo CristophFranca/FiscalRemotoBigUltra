@@ -209,6 +209,13 @@
    - **+** Valor do desconto já aplicado no produto
    - **÷** Quantidade
 
+**Exemplo VNC:**
+```
+7894900011159	x	COCA COLA TRAD LT 310ML
+3,000UN 	x 	         3,99	   |	   11,97
+Desconto no item 1 	30,3%		      -3,63
+```
+
 **Exemplo prático:**
 ```
 3 Cocas de R$ 3,99 (já está R$ 2,78, no cartaz está R$ 2,59)
@@ -282,6 +289,7 @@ Passo a passo no sistema:
 _Documento de uso interno_
 
 </div>
+
 
 
 
