@@ -24,10 +24,7 @@
 
 ## 🔍 Navegação Rápida
 
-**[⌨️ Atalhos](#️-atalhos-do-teclado)** | 
-**[🛒 Funções](#-funções-do-sistema)** | 
-**[💳 POS](#-procedimento-pos)** | 
-**[📝 Procedimentos](#-o-que-fazer)**
+**[⌨️ Atalhos](#️-atalhos-do-teclado)** | **[🛒 Funções](#-funções-do-sistema)** | **[💳 POS](#-procedimento-pos)** | **[📝 Procedimentos](#-o-que-fazer)** | **[⚖️ Erro na Pesagem](#️-erro-na-pesagem)**
 
 </div>
 
@@ -176,7 +173,7 @@
 **Passo a passo:**
 
 1. **Função 13** → Acesse a função de estorno de TEF
-2. **Selecione o tipo de TEF** → Escolha entre Cartão ou Pix
+2. **Seleciona o tipo de TEF** → Escolha entre Cartão ou Pix
 3. **Insira o Valor da Transação** → Ex: `R$ 178,90`
 4. **Insira a Data** → Ex: `01/02/2026`
 5. **Insira o CV/NSU** → Ex: `000123456`
@@ -214,33 +211,58 @@
 
 **Exemplo prático:**
 ```
-3 Cocas de R$ 3,99 (já está R$ 2,78 no sistema, no cartaz está R$ 2,59)
+3 Cocas de R$ 3,99 (já está R$ 2,78, no cartaz está R$ 2,59)
 
 Cálculo:
-(2,59 × 3) + 3,63 ÷ 3 = 3,80
+(2,59 × 3) + 3,63 ÷ 3 = Novo preço unitário
 ```
 
-> ⚠️ **Atenção:** Sempre valide o cartaz/etiqueta antes de aplicar o desconto adicional.
+> ⚠️ **Atenção:** Sempre confira o cartaz/etiqueta antes de aplicar o desconto adicional.
 
 <br>
 
-### Erro na pesagem
+### ⚖️ Erro na Pesagem
+
+> ⚠️ **Descrição do problema:** O sistema contabilizava 1kg independente da quantidade real pesada pelo cliente (ex: 200g ou 4kg).
 
 **Cálculo e procedimento:**
 
-**Peso a menos que 1kg.**
+#### 📉 Peso menor que 1kg
 
-1. Verificar peso da balança EX: 0,234
-2. Calcular peso x kg EX: 0,234 x 8,99 = 2,10 R$
+1. **Verifique o peso na balança** → Ex: `0,234 kg`
+2. **Calcule:** Peso × Preço/kg → Ex: `0,234 × R$ 8,99 = R$ 2,10`
+3. **Registre o valor calculado** no sistema
 
-**Peso a mais que 1kg.**
+**Exemplo:**
+```
+Peso na balança: 0,234 kg
+Cálculo: 0,234 × 8,99 = R$ 2,10
+```
 
-1. Verificar peso da balança EX: `2,855`
-2. Fraciona em "X" vezes EX: `2,855kg / 3kg` | `2,037kg / 2kg`
-3. Calcular peso x kg EX: `0,855 x 8,99 = 7,68 R$`
-4. Registra 1kg
-5. Faz o desconto no primeiro
-6. Registra oque falta EX: `2kg`
+<br>
+
+#### 📈 Peso maior que 1kg
+
+1. **Verifique o peso na balança** → Ex: `2,855 kg`
+2. **Fracione em partes inteiras + resto:**
+   - `2,855 kg` → separa em `2 kg` inteiros + `0,855 kg` restante
+3. **Calcule o restante:** Peso × Preço/kg → Ex: `0,855 × R$ 8,99 = R$ 7,68`
+4. **Registre 1 kg** no sistema
+5. **Aplique desconto no 1º item** para ajustar ao valor calculado
+6. **Registre o restante inteiro** → Ex: `2 kg`
+
+**Exemplo:**
+```
+Peso na balança: 2,855 kg
+Fracionamento: 2,855 → 2kg inteiros + 0,855kg restante
+Cálculo: 0,855 × 8,99 = R$ 7,68
+
+Passo a passo no sistema:
+  1. Registra 0,855kg com desconto → R$ 7,68
+  2. Registra 2kg → valor normal
+```
+
+> 💡 **Dica:** Sempre confira o peso exibido na balança antes de registrar e, se necessário, chame o supervisor para validar.
 
 <br>
 
@@ -251,13 +273,12 @@ Cálculo:
 ### 📌 Informações do Documento
 
 **Última atualização:** `Fevereiro de 2026`  
-**Versão:** `1.0`  
+**Versão:** `1.1`  
 **Responsável:** `[Jessica Ferreira]`
 
 ---
 
 **BigUltra** | Fiscalização Remota  
 _Documento de uso interno_
-
 
 </div>
