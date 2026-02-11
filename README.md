@@ -313,7 +313,7 @@ Erro "Sem conexão"
        ↓
 Chamar Fiscal/Encarregado
        ↓
-Liberar valor em dinheiro ao cliente
+Liberar valor do vale na compra
        ↓
 Sistema voltou?
    ├── SIM → Função 44 → Abater vale no caixa
@@ -336,4 +336,5 @@ Sistema voltou?
 _Documento de uso interno_
 
 </div>
+
 
