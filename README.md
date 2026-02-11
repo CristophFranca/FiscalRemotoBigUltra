@@ -206,7 +206,7 @@
 1. **Função 29** → Acesse divergência de preço
 2. **Calcule o novo valor:**
    - Preço da etiqueta/cartaz **×** Quantidade
-   - **+** Preço com desconto já aplicado
+   - **+** Valor do desconto já aplicado no produto
    - **÷** Quantidade
 
 **Exemplo prático:**
@@ -282,5 +282,6 @@ Passo a passo no sistema:
 _Documento de uso interno_
 
 </div>
+
 
 
