@@ -258,7 +258,7 @@ Fracionamento: 2,855 → 2kg inteiros + 0,855kg restante
 Cálculo: 0,855 × 8,99 = R$ 7,68
 
 Passo a passo no sistema:
-  1. Registra 0,855kg com desconto → R$ 7,68
+  1. Registra 1kg com desconto → R$ 7,68
   2. Registra 2kg → valor normal
 ```
 
@@ -282,4 +282,5 @@ Passo a passo no sistema:
 _Documento de uso interno_
 
 </div>
+
 
