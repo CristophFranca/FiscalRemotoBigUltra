@@ -188,14 +188,17 @@
 
 1. **Função 42** → Acesse devolução de produto
 2. **Bipa o produto** → Escaneie o código de barras
-3. **Selecione o tipo de devolução:**
+3. **Insira os dados da nota fiscal**, Data, DOC/COO & Série
+   `EX: Data 01/02/2026 | DOC: 01234 | Série: 216008`
+> 💡 **Dica:** A série sempre será numero da loja seguido do numero do caixa.
+5. **Selecione o tipo de devolução:**
    - Arrependimento
    - Defeito
    - Impróprio
    - Insatisfação
-4. **Função 17** → Confirma e imprime a devolução
+6. **Função 17** → Confirma e imprime a devolução
 
-> 💡 **Dica:** Sempre verifique a nota fiscal original antes de processar a devolução.
+> 💡 **Importante:** Sempre verifique a nota fiscal original antes de processar a devolução.
 
 <br>
 
@@ -289,6 +292,7 @@ Passo a passo no sistema:
 _Documento de uso interno_
 
 </div>
+
 
 
 
