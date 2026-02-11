@@ -224,6 +224,26 @@ Cálculo:
 
 <br>
 
+### Erro na pesagem
+
+**Cálculo e procedimento:**
+
+**Peso a menos que 1kg.**
+
+1. Verificar peso da balança EX: 0,234
+2. Calcular peso x kg EX: 0,234 x 8,99 = 2,10 R$
+
+**Peso a mais que 1kg.**
+
+1. Verificar peso da balança EX: `2,855`
+2. Fraciona em "X" vezes EX: `2,855kg / 3kg` | `2,037kg / 2kg`
+3. Calcular peso x kg EX: `0,855 x 8,99 = 7,68 R$`
+4. Registra 1kg
+5. Faz o desconto no primeiro
+6. Registra oque falta EX: `2kg`
+
+<br>
+
 ---
 
 <div align="center">
@@ -238,5 +258,6 @@ Cálculo:
 
 **BigUltra** | Fiscalização Remota  
 _Documento de uso interno_
+
 
 </div>
