@@ -324,7 +324,7 @@ Passo 3 — Registrar na Função 29: R$ 26,28/kg
 **Passo a passo:**
 
 1. **Chame um Fiscal ou Encarregado**
-2. **Libere o valor do vale em dinheiro** ao cliente
+2. **Libere o valor do vale em dinheiro** na compra
 3. **Peça para o operador retornar em algumas horas**
 4. Quando o sistema voltar, utilize a **Função 44** para abater o valor do vale no caixa
 5. **Caso o sistema ainda esteja com erro:**
@@ -338,7 +338,7 @@ Erro "Sem conexão com servidor remoto"
               ↓
   Chamar Fiscal / Encarregado
               ↓
-  Liberar valor em dinheiro ao cliente
+  Liberar valor do vale em dinheiro
               ↓
         Sistema voltou?
        ↙             ↘
@@ -365,3 +365,4 @@ Erro "Sem conexão com servidor remoto"
 _Documento de uso interno_
 
 </div>
+
