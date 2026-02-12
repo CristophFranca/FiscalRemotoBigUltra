@@ -173,7 +173,7 @@
 **Passo a passo:**
 
 1. **Função 13** → Acesse a função de estorno de TEF
-2. **Selecione o tipo de TEF** → Escolha entre Cartão ou Pix
+2. **Seleciona o tipo de TEF** → Escolha entre Cartão ou Pix
 3. **Insira o Valor da Transação** → Ex: `R$ 178,90`
 4. **Insira a Data** → Ex: `01/02/2026`
 5. **Insira o CV/NSU** → Ex: `000123456`
@@ -288,6 +288,35 @@ Passo a passo no sistema:
 
 ---
 
+### 🏷️ Erro no Cartaz
+
+> ⚠️ **Descrição do problema:** O cartazista especificou o preço por unidade em vez de por quilograma (ex: *Costelinha R$ 18,99 und*), fazendo o cliente acreditar que o preço é por peça e não por kg.
+
+**Cálculo e procedimento:**
+
+1. **Pegue o preço do cartaz e divida pelo peso** do produto
+2. **Multiplique o resultado pelo peso novamente** — se chegar ao mesmo valor do cartaz, o cálculo está correto
+3. **Use o primeiro resultado na Função 29** para registrar o preço correto por kg
+
+**Exemplo prático:**
+```
+CUPIM BOVINO 1,522 KG × R$ 39,99 = R$ 60,86
+
+Passo 1 — Preço por kg:
+39,99 ÷ 1,522 = 26,2746... → (26,28)
+
+Passo 2 — Validação:
+26,28 × 1,522 = 39,998... → (≈ 39,99) ✔
+
+Passo 3 — Registrar na Função 29: R$ 26,28/kg
+```
+
+> 💡 **Dica:** O arredondamento de centavos é normal. Se o resultado da validação ficar próximo ao valor do cartaz (diferença de centavos), o cálculo está correto.
+
+<br>
+
+---
+
 ### 🔌 Erro de Conexão — Vale Crédito
 
 > ⚠️ **Descrição do problema:** Ao Validar / Devolver / Cancelar o vale crédito, o sistema retorna **"Sem conexão com servidor remoto"**.
@@ -295,13 +324,9 @@ Passo a passo no sistema:
 **Passo a passo:**
 
 1. **Chame um Fiscal ou Encarregado**
-
-2. **Faça a liberação do valor do vale em dinheiro** ao cliente
-
+2. **Libere o valor do vale em dinheiro** ao cliente
 3. **Peça para o operador retornar em algumas horas**
-
 4. Quando o sistema voltar, utilize a **Função 44** para abater o valor do vale no caixa
-
 5. **Caso o sistema ainda esteja com erro:**
    - Peça ao Fiscal/Encarregado para enviar uma **nota para a tesoureira** junto com o vale crédito no malote
    - A tesoureira irá validar no seu expediente para **evitar quebra indesejada**
@@ -309,15 +334,19 @@ Passo a passo no sistema:
 > 💡 **Resumo do fluxo:**
 
 ```
-Erro "Sem conexão"
-       ↓
-Chamar Fiscal/Encarregado
-       ↓
-Liberar valor do vale na compra
-       ↓
-Sistema voltou?
-   ├── SIM → Função 44 → Abater vale no caixa
-   └── NÃO → Nota + Vale no malote → Tesoureira resolve no expediente
+Erro "Sem conexão com servidor remoto"
+              ↓
+  Chamar Fiscal / Encarregado
+              ↓
+  Liberar valor em dinheiro ao cliente
+              ↓
+        Sistema voltou?
+       ↙             ↘
+     SIM              NÃO
+      ↓                ↓
+ Função 44      Nota + Vale no malote
+ Abater vale    Tesoureira resolve no
+  no caixa          expediente
 ```
 
 <br>
@@ -328,7 +357,7 @@ Sistema voltou?
 
 ### 📌 Informações do Documento
 
-**Última atualização:** `Fevereiro de 2026` | **Versão:** `1.2` | **Supervisora:** `[Jessica Ferreira]`
+**Última atualização:** `Fevereiro de 2026` | **Versão:** `1.3` | **Supervisora:** `[Jessica Ferreira]`
 
 ---
 
@@ -336,5 +365,3 @@ Sistema voltou?
 _Documento de uso interno_
 
 </div>
-
-
