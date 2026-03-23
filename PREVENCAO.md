@@ -103,7 +103,7 @@ Operador digitou:
 
 **Variações:**
 - **Italakinho:** 24 unidades por pacote
-- **Quatorzinho, Chocomil, etc.:** 27 unidades por pacote
+- **Quatarzinho, Chocomil, etc.:** 27 unidades por pacote
 
 > 💡 **Dica:** Verifique sempre a embalagem para confirmar a quantidade exata.
 
@@ -113,7 +113,7 @@ Cliente levou:
   ✅ 1 pacote Italakinho = 24 und
 
 Operador digitou:
-  ❌ 1 pacote Italakinho = 27 und (confundiu com Quatorzinho)
+  ❌ 1 pacote Italakinho = 27 und (confundiu com Quatarzinho)
 ```
 
 <br>
