@@ -122,8 +122,8 @@ Guia de erros operacionais que causam prejuízos e como evitá-los:
 
 | Versão | Data | Alterações |
 |:------:|------|------------|
-| **1.3** | Março/2026 | Divisão em módulos separados + Prevenção de Perdas |
-| **1.2** | Fevereiro/2026 | Adição de Erros Comuns |
+| **1.4** | Março/2026 | Divisão em módulos separados + Prevenção de Perdas |
+| **1.3** | Fevereiro/2026 | Adição de Erros Comuns |
 | **1.1** | Fevereiro/2026 | Procedimentos e navegação rápida |
 | **1.0** | Fevereiro/2026 | Versão inicial |
 
@@ -146,9 +146,7 @@ Guia de erros operacionais que causam prejuízos e como evitá-los:
 
 ### 📌 Informações do Documento
 
-**Última atualização:** `Março de 2026`  
-**Versão:** `1.3`  
-**Responsável:** `[Jessica Ferreira]`
+**Última atualização:** `Março de 2026` | **Versão:** `1.4` | **Supervisora:** `[Jessica Ferreira]`
 
 ---
 
